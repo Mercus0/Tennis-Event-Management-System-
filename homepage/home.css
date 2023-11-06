@@ -1,0 +1,158 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: main; }
+.item3 { grid-area: footer; }
+
+.item1{
+  padding-bottom: 20px;
+  height: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main main main'
+    'footer footer footer footer footer footer';
+    padding-top: 10px;
+}
+
+.cards{
+    display: flex;
+}
+
+.card{
+    margin: 10px;
+}
+
+.register-btn{
+    width: 100%;
+    border-radius: 10px ;
+    font-size: 1.5em;
+}
+
+.register-btn:hover{
+    background-color:rgb(206, 118, 118);
+}
+/* li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #fff788;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.nav-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-right ul li {
+  margin-left: 10px; 
+} */
+
+/* slideshow bar */
+img {vertical-align: middle;}
+
+.s-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.f{
+  animation-name:fade; 
+  animation-duration: 1.5s; 
+}
+
+@keyframes f{
+  0% {opacity: .4} 
+  100% {opacity: 0}
+}
+
+.Slides {display: block;}
+.slides>img {
+  vertical-align: middle; 
+}
+
+/* card hove effect is here */ 
+.card {
+  display: block;
+  top: 0px;
+  position: relative;
+  background-color: #f2f8f9;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid #f2f8f9;
+
+  &:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgb(192, 89, 89);
+    top: -4px;
+    border: 1px solid #cccccc;
+    background-color: white;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: rgb(192, 89, 89);
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.15s ease-out;
+  }
+
+  &:hover:before {
+    transform: scale(2.15);
+  }
+}
