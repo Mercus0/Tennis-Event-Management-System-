@@ -64,7 +64,7 @@ session_start();
                     <?php } else { ?>
                     <form class="d-flex my-lg-0">
                         <a href="../login/loginpage.php" class="btn btn-outline-danger btn-lg me-3">Login</a>
-                        <a href="../register/register.html" class="btn btn-outline-danger btn-lg">Sign Up</a>
+                        <a href="../register/registerPage.php" class="btn btn-outline-danger btn-lg">Sign Up</a>
                     </form>
                     <?php } ?>
                 </div>
